@@ -14,4 +14,4 @@ The next place to look is [Interop.java](src/main/java/interop/Interop.java)
 This is where we define the wrapper. For each function we want to test from `Clojure`, we create a Var that bridges into the Clojure function. E.g. `private static Var fib = = RT.var("scripts", "nth-fib");`
 We can then invoke that function from Java as we would like, which leads into how we test. 
 
-Looking at [src/main/java/interop/tests/TestInterop.java](src/main/java/interop/tests/TestInterop.java) you can see the very simple unit test I wrote. This structure is very similar to the Python autograder. 
+Looking at [src/main/java/interop/tests/InteropTest.java](src/main/java/interop/tests/InteropTest.java) you can see the very simple unit test I wrote. This structure is very similar to the Python autograder. 
