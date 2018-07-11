@@ -2,7 +2,7 @@
 
 Adapted from the gradescope docs.
 
-# Navigation Help
+### Navigation Help
 
 Students submit a Clojure file (in this case called [scripts.clj](solution/scripts.clj)) 
 
@@ -15,3 +15,14 @@ This is where we define the wrapper. For each function we want to test from `Clo
 We can then invoke that function from Java as we would like, which leads into how we test. 
 
 Looking at [src/main/java/interop/tests/InteropTest.java](src/main/java/interop/tests/InteropTest.java) you can see the very simple unit test I wrote. This structure is very similar to the Python autograder. 
+
+
+### Other files
+
+The folder [jh61b](src/main/java/jh61b) contains all the unit testing backend that instructors don't have to deal with.
+
+[compile.sh](compile.sh) is how we compile all the java files. Importantly we include `src/main/resources/` as part of the classpath, this is how we find the clojure files submitted by the students.
+
+[run.sh](run.sh) same as `compile.sh`
+
+[setup.sh](setup.sh) all we need is java 8, everything else (including clojure) is just a jar file included in the repo.
