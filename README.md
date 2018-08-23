@@ -26,3 +26,10 @@ The folder [jh61b](src/main/java/jh61b) contains all the unit testing backend th
 [run.sh](run.sh) same as `compile.sh`
 
 [setup.sh](setup.sh) all we need is java 8, everything else (including clojure) is just a jar file included in the repo.
+
+
+### To Use:
+
+Edit the test cases to suit the assignment. 
+
+Run `./make_autograder.sh` to create a new autograder.zip file. Submit this to Gradescope.
